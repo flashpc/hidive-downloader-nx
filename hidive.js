@@ -522,7 +522,7 @@ async function muxStreams(){
             if(addSubs){
                 for(let t in sxList){
                     if(capsOpt(sxList[t].isCaps)){
-                        mkvmux += `--track-name "0:${sxList[t].language}" --language "0:${sxList[t].langCode}" --default-track "0:no" "${sxList[t].file}" `;
+                        mkvmux += `--track-name "0:${sxList[t].language}" --language "0:${sxList[t].langCode}" --default-track "0:yes" "${sxList[t].file}" `;
                     }
                 }
             }
